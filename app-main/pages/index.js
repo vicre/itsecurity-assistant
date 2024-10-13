@@ -1,4 +1,3 @@
-// pages/index.js
 import React from 'react';
 import ReactFlow, { MiniMap, Controls } from 'react-flow-renderer';
 import { FaFacebook, FaGoogle, FaLinkedin } from 'react-icons/fa';
@@ -7,7 +6,7 @@ const nodes = [
   {
     id: 'google',
     type: 'default',
-    position: { x: 500, y: 20 }, // Adjusted position to move it above
+    position: { x: 500, y: 20 }, 
     data: {
       label: (
         <div className="flex flex-col items-center">
@@ -49,8 +48,20 @@ const nodes = [
 ];
 
 const edges = [
-  { id: 'e-linkedin-google', source: 'linkedin', target: 'google', animated: false },
-  { id: 'e-facebook-google', source: 'facebook', target: 'google', animated: false },
+  { 
+    id: 'e-linkedin-google', 
+    source: 'linkedin', 
+    target: 'google', 
+    animated: false, 
+    type: 'smoothstep' // Curved line
+  },
+  { 
+    id: 'e-facebook-google', 
+    source: 'facebook', 
+    target: 'google', 
+    animated: false, 
+    type: 'smoothstep' // Curved line
+  },
 ];
 
 const FlowDiagram = () => {
