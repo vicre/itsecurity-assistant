@@ -1,17 +1,20 @@
 // pages/index.js
+import { FaFacebook, FaGoogle, FaMicrosoft, FaLinkedin, FaApple, FaAndroid } from 'react-icons/fa'; // FontAwesome icons
+import { SiBitwarden } from 'react-icons/si'; // Simple Icons
+
 export default function Home() {
-    return (
-      <main className="flex flex-col items-center justify-center min-h-screen py-16 bg-gradient-to-b from-gray-100 to-gray-300">
-        <h1 className="text-6xl font-bold text-gray-900">
-          Hello, World!
-        </h1>
-        <p className="mt-6 text-xl text-gray-700">
-          Tailwind CSS is working perfectly in this Next.js app.
-        </p>
-        <button className="mt-10 px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 transition duration-300">
-          Get Started
-        </button>
-      </main>
-    );
-  }
-  
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen py-16 bg-gray-50">
+      <h1 className="text-4xl font-bold mb-8">Social Media Icons</h1>
+      <div className="flex space-x-6 text-6xl">
+        <FaFacebook className="text-blue-600" />
+        <FaGoogle className="text-red-500" />
+        <FaMicrosoft className="text-blue-700" />
+        <FaLinkedin className="text-blue-400" />
+        <SiBitwarden className="text-gray-700" />
+        <FaApple className="text-gray-800" />
+        <FaAndroid className="text-green-500" />
+      </div>
+    </div>
+  );
+}

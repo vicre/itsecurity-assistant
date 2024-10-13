@@ -5,4 +5,10 @@
 body {
     background-color: #d1d5db;
     background: var(--tw-gradient-to-position);
-  }
+}
+
+.mermaid {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
