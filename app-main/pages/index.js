@@ -12,7 +12,7 @@ const nodes = [
         <div className="flex flex-col items-center">
           <FaGoogle className="text-red-500 text-4xl" />
           <p>Google (Gmail)</p>
-          <p>victor.reipur@gmail.com</p>
+          <p>vicredtudk@gmailcom</p>
         </div>
       ),
     },
